@@ -30,3 +30,34 @@ p {
     margin: 0;
 }
 /* **reset some style** */
+
+body {
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666666;
+    font-size: 0.875rem;
+}
+
+.container {
+    max-width: 1016px;
+    margin: 0 auto;
+    padding: 0 1.75rem;
+}
+
+.banner,
+.copyright {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header-top {
+    background-color: #1f1f56;
+}
+
+.header-menu__items {
+    display: flex;
+}
+
+.social-list__items {
+    display: flex;
+}
