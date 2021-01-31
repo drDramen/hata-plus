@@ -16,14 +16,16 @@
         <header class="header">
             <div class="header-top">
                 <div class="container">
-                    <nav class="header-nav">
-                        <ul class="nav-menu__items">
-                            <li class="nav-menu__item"><a href="#">Головна</a></li>
-                            <li class="nav-menu__item"><a href="#">Про компанію</a></li>
-                            <li class="nav-menu__item"><a href="#">Наші будівлі</a></li>
-                            <li class="nav-menu__item"><a href="#">Акції</a></li>
-                            <li class="nav-menu__item"><a href="#">Контакти</a></li>
-                        </ul>
+                    <div class="header-top__wrapper">
+                        <nav class="header-nav">
+                            <ul class="nav-menu__items">
+                                <li class="nav-menu__item"><a href="#">Головна</a></li>
+                                <li class="nav-menu__item"><a href="#">Про компанію</a></li>
+                                <li class="nav-menu__item"><a href="#">Наші будівлі</a></li>
+                                <li class="nav-menu__item"><a href="#">Акції</a></li>
+                                <li class="nav-menu__item"><a href="#">Контакти</a></li>
+                            </ul>
+                        </nav>
                         <ul class="nav-social__items">
                             <li class="nav-social__item">
                                 <a href="#">
@@ -50,26 +52,46 @@
                                 </a>
                             </li>
                         </ul>
-                    </nav>
+                    </div>
                 </div>
             </div>
             <div class="header-bottom">
                 <div class="container">
-                    <div class="header-logo">
-                        <a href=""><img src="img/hata-plus_logo.png" alt="Котеджі та заміські будинки від будівельної компанії Хата Плюс"></a>
-                    </div>
-                    <div class="header-contacts contacts">
+                    <div class="header-bottom__inner">
+                        <div class="header-logo">
+                            <a href=""><img src="img/hata-plus_logo.png" alt="Котеджі та заміські будинки від будівельної компанії Хата Плюс"></a>
+                        </div>
+
                         <ul class="contacts-phone">
-                            <li><a href="tel:+380971002525">+38(097) 100-25-25</a></li>
+                            <li>
+                                <svg width="17" height="17" class="icon-basic">
+                                    <title>Phone</title>
+                                    <use xlink:href="img/sprite.svg#phone"></use>
+                                </svg>
+                                <a href="tel:+380971002525">+38(097) 100-25-25</a>
+                            </li>
                             <li><a href="tel:+380971002525">+38(097) 100-25-25</a></li>
                         </ul>
                         <ul class="contacts-msg">
-                            <li><a href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a></li>
-                            <li><a href="skype:hataplus">hataplus</a></li>
+                            <li>
+                                <svg width="18" height="13" class="icon-basic">
+                                    <title>Email</title>
+                                    <use xlink:href="img/sprite.svg#email"></use>
+                                </svg>
+                                <a href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a>
+                            </li>
+                            <li>
+                                <svg width="19" height="19" class="icon-basic">
+                                    <title>Skype</title>
+                                    <use xlink:href="img/sprite.svg#skype"></use>
+                                </svg>
+                                <a href="skype:hataplus">hataplus</a>
+                            </li>
                         </ul>
-                    </div>
-                    <div class="header-callback">
-                        <a class="btn" href="">Замовити дзвінок</a>
+
+                        <div class="header-callback">
+                            <a class="btn" href="">Замовити дзвінок</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -78,9 +100,9 @@
 
         <!--start banner ↓-->
         <div class="banner">
-            <p>Пропозиція місяця</p>
+            <p class="tagline">Пропозиція місяця</p>
             <h1>Ми пропонуємо великий вибір котеджів “під ключ” за самими низькими цінами!</h1>
-            <p><span class="banner-price">5999</span><span class="banner-currency"> грн</span> / м<sup>2</sup></p>
+            <p class="banner-price"><span class="price-sum">5999</span><span class="price-currency"> грн</span> / м<sup>2</sup></p>
         </div>
         <!--end banner ↑-->
 
@@ -94,31 +116,44 @@
                             <h2 class="content-page__title">Компанія “Хата Плюс”</h2>
                             <p>Напевно кожен з нас не раз думав про те, щоб купити будинок котедж і насолоджуватися життям в гармонії з природою. Дійсно, для багатьох жителів мегаполісу заміська нерухомість під містом стала справжньою віддушиною і порятунком від сумній життя в багатоповерхівках спальних районів.</p>
                             <p>Крім цього, заміські котеджі “Хата Плюс” від забудовника — це найбільш вигідна цінова пропозиція по співвідношенню площа / вартість, оскільки у вартість домоволодіння входить також земельна ділянка, на якому можна не тільки посадити сад, але облаштувати зону відпочинку, спорудити сауну, поставити альтанку і барбекю.</p>
-                            <a href="#">Детальніше про нас</a>
+                            <a class="content-page__more" href="#">Детальніше про нас</a>
                         </div>
+                        <hr class="hr">
                         <div class="popular-projects">
                             <h2 class="popular-projects__title">Популярні проекти</h2>
                             <ul class="popular-projects__items">
                                 <li class="popular-projects__item">
-                                    <img src="img/edmonton_338_м2.jpg" alt="Купити заміський будинок Edmonton від забудовника">
-                                    <h3 class="title"><a href="#">Edmonton (338 м<sup>2</sup>)</a></h3>
-                                    <p class="size">Загальна площа будови: <span>312</span> м<sup>2</sup></p>
-                                    <p class="number-of-rooms">Кількість спалень: <span>4</span></p>
-                                    <p class="garage">Гараж: <span>2</span> авто</p>
+                                    <a class="popular-projects__item-img" href="#"><img src="img/edmonton_338_м2.jpg" width="215" height="150" alt="Купити заміський будинок Edmonton від забудовника"></a>
+                                    <div class="item__content">
+                                        <p class="title">
+                                            <a href="#"><span class="name">Edmonton</span> (338 м<sup>2</sup>)</a>
+                                        </p>
+                                        <p class="size">Загальна площа будови: <span>312</span> м<sup>2</sup></p>
+                                        <p class="number-of-rooms">Кількість спалень: <span>4</span></p>
+                                        <p class="garage">Гараж: <span>2</span> авто</p>
+                                    </div>
                                 </li>
                                 <li class="popular-projects__item">
-                                    <img src="img/montreal _332_м2.jpg" alt="Купити заміський будинок Montreal від забудовника">
-                                    <h3 class="title"><a href="#">Montreal (332 м<sup>2</sup>)</a></h3>
-                                    <p class="size">Загальна площа будови: <span>290</span> м<sup>2</sup></p>
-                                    <p class="number-of-rooms">Кількість спалень: <span>3</span></p>
-                                    <p class="garage">Гараж: <span>2</span> авто</p>
+                                    <a class="popular-projects__item-img" href="#"><img src="img/montreal _332_м2.jpg" width="215" height="150" alt="Купити заміський будинок Montreal від забудовника"></a>
+                                    <div class="item__content">
+                                        <p class="title">
+                                            <a href="#"><span class="name">Montreal</span> (332 м<sup>2</sup>)</a>
+                                        </p>
+                                        <p class="size">Загальна площа будови: <span>290</span> м<sup>2</sup></p>
+                                        <p class="number-of-rooms">Кількість спалень: <span>3</span></p>
+                                        <p class="garage">Гараж: <span>2</span> авто</p>
+                                    </div>
                                 </li>
                                 <li class="popular-projects__item">
-                                    <img src="img/calgary_294_м2.jpg" alt="Купити заміський будинок Calgary від забудовника">
-                                    <h3 class="title"><a href="#">Calgary (294 м<sup>2</sup>)</a></h3>
-                                    <p class="size">Загальна площа будови: <span>272</span> м<sup>2</sup></p>
-                                    <p class="number-of-rooms">Кількість спалень: <span>3</span></p>
-                                    <p class="garage">Гараж: <span>2</span> авто</p>
+                                    <a class="popular-projects__item-img" href="#"><img src="img/calgary_294_м2.jpg" width="215" height="150" alt="Купити заміський будинок Calgary від забудовника"></a>
+                                    <div class="item__content">
+                                        <p class="title">
+                                            <a class="title" href="#"><span class="name">Calgary</span> (294 м<sup>2</sup>)</a>
+                                        </p>
+                                        <p class="size">Загальна площа будови: <span>272</span> м<sup>2</sup></p>
+                                        <p class="number-of-rooms">Кількість спалень: <span>3</span></p>
+                                        <p class="garage">Гараж: <span>2</span> авто</p>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -128,19 +163,19 @@
                     <aside class="content-menu">
                         <h2>Категорії проектів</h2>
                         <ul class="content-menu__items">
-                            <li class="content-menu__item"><a href="#">Генеральний план</a></li>
-                            <li class="content-menu__item">
+                            <li class="menu__item"><a href="#">Генеральний план</a></li>
+                            <li class="menu__item">
                                 <a href="#">Навколишнє середовище</a>
                                 <ul class="content-submenu__items">
-                                    <li class="content-submenu__item"><a href="#">Продані</a></li>
-                                    <li class="content-submenu__item"><a href="#">Заброньованні</a></li>
-                                    <li class="content-submenu__item"><a href="#">В процесі будівництва</a></li>
+                                    <li class="menu__item"><a href="#">Продані</a></li>
+                                    <li class="menu__item"><a href="#">Заброньованні</a></li>
+                                    <li class="menu__item"><a href="#">В процесі будівництва</a></li>
                                 </ul>
                             </li>
-                            <li class="content-menu__item"><a href="#">Умови придбання</a></li>
-                            <li class="content-menu__item"><a href="#">Загородні котеджі</a></li>
-                            <li class="content-menu__item"><a href="#">Інфраструктура</a></li>
-                            <li class="content-menu__item"><a href="#">Готові будинки</a></li>
+                            <li class="menu__item"><a href="#">Умови придбання</a></li>
+                            <li class="menu__item"><a href="#">Загородні котеджі</a></li>
+                            <li class="menu__item"><a href="#">Інфраструктура</a></li>
+                            <li class="menu__item"><a href="#">Готові будинки</a></li>
                         </ul>
                     </aside>
                     <!--end content-menu ↑-->
@@ -153,40 +188,62 @@
         <footer class="footer">
             <div class="footer-main">
                 <div class="container">
-                    <ul class="info">
-                        <li>
-                            <a href="#">Будинки</a>
-                        </li>
-                        <li>
-                            <a href="#">Інфраструктура</a>
-                        </li>
-                        <li>
-                            <a href="#">Сервіс</a>
-                        </li>
-                        <li>
-                            <a href="#">Новини</a>
-                        </li>
-                    </ul>
-                    <ul class="about">
-                        <li>
-                            <a href="#">Про компанію</a>
-                        </li>
-                        <li>
-                            <a href="#">Страхування</a>
-                        </li>
-                        <li>
-                            <a href="#">Контакти</a>
-                        </li>
-                    </ul>
-                    <div class="footer-contacts contacts">
-                        <ul class="contacts-phone">
-                            <li><a href="tel:+380971002525">+38(097) 100-25-25</a></li>
-                            <li><a href="tel:+380971002525">+38(097) 100-25-25</a></li>
+                    <div class="footer__inner">
+                        <ul class="info">
+                            <li>
+                                <a href="#">Будинки</a>
+                            </li>
+                            <li>
+                                <a href="#">Інфраструктура</a>
+                            </li>
+                            <li>
+                                <a href="#">Сервіс</a>
+                            </li>
+                            <li>
+                                <a href="#">Новини</a>
+                            </li>
                         </ul>
-                        <ul class="contacts-msg">
-                            <li><a href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a></li>
-                            <li><a href="skype:hataplus">hataplus</a></li>
+                        <ul class="about">
+                            <li>
+                                <a href="#">Про компанію</a>
+                            </li>
+                            <li>
+                                <a href="#">Страхування</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакти</a>
+                            </li>
                         </ul>
+                        <div class="footer-contacts">
+                            <div class="footer-contacts__inner">
+                                <ul class="contacts-phone">
+                                    <li>
+                                        <svg width="17" height="17" class="icon-basic">
+                                            <title>Phone</title>
+                                            <use xlink:href="img/sprite.svg#phone"></use>
+                                        </svg>
+                                        <a href="tel:+380971002525">+38(097) 100-25-25</a>
+                                    </li>
+                                    <li><a href="tel:+380971002525">+38(097) 100-25-25</a></li>
+                                </ul>
+                                <ul class="contacts-msg">
+                                    <li>
+                                        <svg width="18" height="13" class="icon-basic">
+                                            <title>Email</title>
+                                            <use xlink:href="img/sprite.svg#email"></use>
+                                        </svg>
+                                        <a href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a>
+                                    </li>
+                                    <li>
+                                        <svg width="19" height="19" class="icon-basic">
+                                            <title>Skype</title>
+                                            <use xlink:href="img/sprite.svg#skype"></use>
+                                        </svg>
+                                        <a href="skype:hataplus">hataplus</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
