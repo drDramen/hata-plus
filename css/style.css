@@ -649,6 +649,7 @@ button {
     border: none;
     border-radius: 21px;
     background-color: #fd8300;
+    cursor: pointer;
 }
 
 form .subject,
