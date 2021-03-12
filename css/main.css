@@ -1,0 +1,432 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+sup {
+    font-size: 0.65em;
+}
+
+hr {
+    margin-bottom: 30px;
+    border: none;
+    border-top: 1px solid #e4e4ec;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 960px;
+}
+
+.row {
+    display: flex;
+    margin: 0 -14px;
+}
+
+.col {
+    position: relative;
+    width: 219px;
+    margin: 0 14px;
+    box-sizing: border-box;
+}
+
+.top-line {
+    padding: 16px 0;
+    background-color: #1f1f56;
+}
+
+.top-line ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    font-size: 0;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-menu li {
+    margin-right: 25px;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.top-menu a {
+    color: #b1b1d2;
+    text-decoration: none;
+}
+
+.top-menu a:hover {
+    color: #fd8300;
+}
+
+.social li {
+    margin-left: 25px;
+    display: inline-block;
+}
+
+.social a {
+    display: block;
+    background-image: url(../img/sprite.png);
+}
+
+a.fb {
+    height: 19px;
+    width: 10px;
+    background-position: 0 0;
+}
+
+a.fb:hover {
+    background-position: 0 -21px;
+}
+
+a.tw {
+    height: 15px;
+    width: 18px;
+    background-position: -12px 0;
+}
+
+a.tw:hover {
+    background-position: -12px -21px;
+}
+
+a.in {
+    height: 19px;
+    width: 19px;
+    background-position: -32px 0px;
+}
+
+a.in:hover {
+    background-position: -32px -21px;
+}
+
+.header-contacts {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header-contacts p {
+    margin: 0;
+}
+
+.header-contacts .row {
+    align-items: center;
+}
+
+.phones,
+.messengers {
+    padding-left: 49px;
+}
+
+.cta {
+    text-align: right;
+}
+
+.phones a {
+    font-size: 18px;
+    color: #25252c;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.tel,
+.mail,
+.skype {
+    position: relative;
+    display: inline-block;
+    transition: filter 1s ease;
+}
+
+.tel,
+.mail {
+    margin-bottom: 10px;
+}
+
+.tel::before,
+.mail::before,
+.skype::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: -29px;
+    background-image: url(../img/sprite.png);
+}
+
+.tel::before {
+    width: 16px;
+    height: 17px;
+    background-position: -53px -21px;
+}
+
+.mail::before {
+    width: 17px;
+    height: 13px;
+    background-position: -73px 0;
+}
+
+.skype::before {
+    width: 18px;
+    height: 19px;
+    background-position: -53px 0;
+}
+
+.tel:hover,
+.mail:hover,
+.skype:hover {
+    filter: grayscale(1);
+}
+
+.messengers a {
+    font-size: 16px;
+    color: #25252c;
+    text-decoration: none;
+}
+
+.phones a:hover,
+.messengers a:hover {
+    text-decoration: underline;
+}
+
+.cta a {
+    display: inline-block;
+    padding: 15px 27px;
+    font-size: 16px;
+    color: #25252c;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 2px solid #fd8300;
+    transition: background-color 1s ease;
+}
+
+.cta a:hover {
+    color: #fff;
+    background-color: #fd8300;
+}
+
+.proposition {
+    padding: 60px 0 40px;
+    text-align: center;
+    background: #000 url(../img/suggestion.jpg) center / cover;
+}
+
+.proposition p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.proposition p:last-child {
+    margin-bottom: 0;
+}
+
+.prop-title {
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Roboto Slab';
+}
+
+.prop-description {
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.prop-description strong {
+    font-weight: normal;
+}
+
+.prop-price {
+    font-size: 24px;
+    color: #fd8300;
+    font-weight: bold;
+}
+
+.prop-price span {
+    font-size: 40px;
+}
+
+.main-container {
+    padding-top: 35px;
+    padding-bottom: 45px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.main-text {
+    padding-bottom: 20px;
+}
+
+.main-text h1 {
+    color: #24242b;
+    font: 700 30px 'Roboto Slab';
+}
+
+.main-text p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+}
+
+.main-text a {
+    color: #fd8300;
+    font-weight: bold;
+}
+
+.main-text a:hover {
+    text-decoration: none;
+}
+
+.popular-projects h2 {
+    color: #24242b;
+    font: 700 24px 'Roboto Slab';
+}
+
+.popular-projects h3 {
+    font-size: 14px;
+    line-height: 24px;
+    color: #1f1f56;
+    font-weight: bold;
+}
+
+.popular-projects p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+}
+
+.hover-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hover-link:hover ~ figcaption h3 {
+    text-decoration: underline;
+}
+
+.sidebar {
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.sidebar p {
+    margin: 0;
+    padding: 12px 15px;
+    color: #fff;
+    font: 700 16px 'Roboto Slab';
+    background-color: #1f1f56;
+}
+
+.sidebar ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.aside-menu > li + li {
+    border-top: 1px solid #cdcddd;
+}
+
+.aside-menu > li:hover > a {
+    color: #fff;
+    background-color: #fd8300;
+}
+
+.aside-menu a {
+    position: relative;
+    display: block;
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #25252c;
+    text-decoration: none;
+    background-color: #e4e4ec;
+}
+
+.aside-menu > li > a::before {
+    content: '';
+    position: absolute;
+    top: 17px;
+    right: 15px;
+    width: 7px;
+    height: 7px;
+    border: 2px solid #666;
+    border-left: none;
+    border-top: none;
+    transform: rotate(-45deg);
+    transition: transform 0.5s ease;
+}
+
+.aside-menu > li:hover > a::before {
+    transform: rotate(45deg);
+    border-color: #fff;
+}
+
+.submenu {
+    max-height: 0;
+    transition: max-height 1s ease;
+}
+
+.aside-menu > li:hover .submenu {
+    max-height: 1000px;
+}
+
+.submenu a {
+    padding-left: 30px;
+    color: #666;
+    transform: translateX(100%);
+    transition: transform 1s ease;
+}
+
+.submenu li:nth-child(1) a {
+    transition-delay: 0.1s;
+}
+
+.submenu li:nth-child(2) a {
+    transition-delay: 0.2s;
+}
+
+.submenu li:nth-child(3) a {
+    transition-delay: 0.3s;
+}
+
+.submenu li:nth-child(4) a {
+    transition-delay: 0.4s;
+}
+
+.submenu li:nth-child(5) a {
+    transition-delay: 0.5s;
+}
+
+.aside-menu > li:hover .submenu a {
+    transform: translateX(0%);
+}
+
+.submenu li:hover a {
+    background-color: #cecedd;
+}
+
+.footer-navigation {
+    background-color: #ededf5;
+}
+
+.copy {
+    background-color: #dcdce6;
+}
+
+.copy p {
+    margin: 0;
+    padding: 14px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+    text-align: center;
+}
